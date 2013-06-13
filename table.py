@@ -66,10 +66,6 @@ class Table(TitleAndDescription):
         """
         self.rows.append( row ) 
 
-    @property
-    def is_very_large(self):
-        return len(self.rows) > 100000;
-
     def compute_column( self, column_name, column_function):
         """ Compute a new column, row by row, using the function provided. 
         
